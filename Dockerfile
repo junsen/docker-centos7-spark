@@ -23,7 +23,7 @@ RUN curl -sL --retry 3 \
 	"http://mirror.bit.edu.cn/apache/spark/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE.tgz" \
 	| gunzip \
 	| tar x -C /opt/ \
-	&& ln -s /opt/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE /opt/spark
+	&& ln -s /opt/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE /opt/spark
 
 # SCRIPTS AND ENVIRONMENTAL VARS
 
