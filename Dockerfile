@@ -20,7 +20,7 @@ RUN yum install -y  \
 	yum clean all
 
 RUN curl -sL --retry 3 \
-	"https://www.apache.org/dyn/closer.lua/spark/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE.tgz" \
+	"http://mirror.bit.edu.cn/apache/spark/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE.tgz" \
 	| gunzip \
 	| tar x -C /opt/ \
 	&& ln -s /opt/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop$HADOOP_PROFILE /opt/spark
