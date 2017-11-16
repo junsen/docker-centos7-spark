@@ -6,7 +6,6 @@ ENV SPARK_PROFILE 2.1
 ENV SPARK_VERSION 2.1.2
 ENV HADOOP_PROFILE 2.7
 ENV HADOOP_VERSION 2.7.0
-spark-2.1.2-bin-hadoop2.7.tgz
 
 RUN yum -y update \
 	&& yum -y groupinstall 'Development Tools' \
